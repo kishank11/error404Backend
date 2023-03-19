@@ -8,14 +8,8 @@ const hospitalSchema = new mongoose.Schema({
         type: String,
 
     },
-    doctors: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Doctor'
-    }],
-    patients: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Patient'
-    }],
+    doctors: { type: Array },
+    patients: { type: Array },
     role: {
         type: String,
         default: "hospital"
