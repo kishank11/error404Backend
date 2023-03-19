@@ -4,17 +4,19 @@ const doctorSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    specialty: {
-        type: String,
-
+    address: { type: String },
+    license_no: {
+        type: String
+    },
+    email: {
+        type: String
     },
     hospital: {
         type: Array
     },
-    role: {
-        type: String,
-        default: "doctor"
-    }
+    mob_no: { type: String },
+    speciality: String,
+    degree: String
 });
 const doc = mongoose.model("Doctor", doctorSchema);
 

@@ -6,18 +6,17 @@ const patientSchema = new mongoose.Schema({
         type: String
 
     },
-    age: {
-        type: Number
-
+    email: {
+        type: String
     },
-    doctor: {
-        type: Array
-
+    phone: {
+        type: String
     },
-    hospital: {
-        type: Array
-
-    }
+    emergency_mob_no: { type: String },
+    insurance_id: {
+        type: String
+    },
+    blood_group: { type: String }
     ,
     role: {
         type: String,
