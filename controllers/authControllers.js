@@ -29,10 +29,10 @@ const login = async (req, res) => {
         }
 
 
-        const token = jwt.sign({ email: user.email, role: user.role }, 'secretkey');
+        // const token = jwt.sign({ email: user.email, role: user.role }, 'secretkey');
 
 
-        return res.json({ token });
+        return res.json({ user });
 
 
     } catch (error) {
