@@ -11,8 +11,8 @@ router.route('/getDocById').get(getDocById)
 
 
 router.route('/hospital').post(addHospital)
-router.route('/getDocs').get(getHospitals)
-router.route('/getDocById').get(getHospitalsById)
+router.route('/getHospitals').get(getHospitals)
+router.route('/getHospitalById').get(getHospitalsById)
 
 router.route('/relative').post(addRelative)
 router.route('/getRelatives').get(getRelatives)
